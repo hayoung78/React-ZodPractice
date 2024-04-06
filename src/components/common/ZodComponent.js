@@ -1,6 +1,5 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { z } from "zod";
 import { Schema } from "./Schema";
 
 const ZodComponent = () => {
@@ -15,6 +14,19 @@ const ZodComponent = () => {
     const onSubmit = (data) => {
         console.log(data);
     };
+    Schema.parse({
+        email: "123123@test.test",
+        password: "1231231Edd@23",
+    });
+
+    const data = {
+        email: "123123@test.test",
+        password: "1231231Edd@23",
+    };
+    const temp = Schema.safeParse(data);
+    if (!temp.success) {
+        console.error(temp.error);
+    }
 
     return (
         <>
