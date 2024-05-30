@@ -14,7 +14,7 @@
 > -   Works in Node.js and all modern browsers => Node.js 및 모든 최신 브라우저에서 작동
 > -   Tiny: 8kb minified + zipped => 데이터 8kb 축소 + 압축됨
 > -   Immutable: methods (e.g. .optional()) return a new instance => 메소드들 새로운 인스턴스 반환
-> -   Concise, chainable interface. => 간결하고 연결가능한 인터페이스 제공
+> -   Concise, chainable interface. => 간결하고 연결가능한 인터페이스 제공함
 > -   Functional approach: parse, don't validate
 > -   Works with plain JavaScript too! You don't need to use TypeScript. => 자바스크립트 랑 타입스크립트 둘다 사용가능
 
